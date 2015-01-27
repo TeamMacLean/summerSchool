@@ -61,8 +61,7 @@ hr {
 
 #hello {
     /*background: url("home1.jpg");*/
-    background-attachment: relative;
-    background-position: center center;
+    background: fixed center center;
 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -75,8 +74,8 @@ hr {
     background-size: cover;
 
     width: 100%;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 #hello h1 {
@@ -101,27 +100,10 @@ hr {
     margin-right: auto;
 }
 
-#f {
-    padding-top: 20px;
-    background: #74cfae;
-    /*background: #607792;*/
-}
-
-#f a {
-    color: #f2f2f2;
-    font-weight: 800;
-}
-
-#f p {
-    color: #f2f2f2;
-    text-align: right;
-    font-weight: 400;
-}
-
 #topics {
     background-color: #4e4e4e;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     /*margin-top: 50px;*/
 }
 
@@ -141,6 +123,23 @@ hr {
     font-weight: 400;
 }
 
+#f {
+    padding-top: 20px;
+    background: #74cfae;
+    /*background: #607792;*/
+}
+
+#f a {
+    color: #f2f2f2;
+    font-weight: 800;
+}
+
+#f p {
+    color: #f2f2f2;
+    text-align: right;
+    font-weight: 400;
+}
+
 .sep {
     background-attachment: fixed;
     background-position: 50% 0;
@@ -148,10 +147,11 @@ hr {
     height: 250px;
     position: relative;
 }
+
 .portfolio {
     background-image: url(sep1.jpg);
 }
 
 #map-holder {
-    height:250px;
+    height: 500px;
 }

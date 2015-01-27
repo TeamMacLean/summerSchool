@@ -1,7 +1,7 @@
 // Google Maps
 function initialize_map() {
 
-    var place = {lat: 52.6224438, lng: 1.2228483};
+    var place = {lat:52.622463, lng: 1.222868};
 
     var map = new google.maps.Map(document.getElementById("map-holder"), {
         center: place,
