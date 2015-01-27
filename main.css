@@ -1,0 +1,157 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+a {
+    color: #34495E;
+    word-wrap: break-word;
+    -webkit-transition: color .1s ease-in, background .1s ease-in;
+    -moz-transition: color .1s ease-in, background .1s ease-in;
+    -ms-transition: color .1s ease-in, background .1s ease-in;
+    -o-transition: color .1s ease-in, background .1s ease-in;
+    transition: color .1s ease-in, background .1s ease-in;
+}
+
+a:focus, a:hover {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:after, a:before {
+    -webkit-transition: color .1s ease-in, background .1s ease-in;
+    -moz-transition: color .1s ease-in, background .1s ease-in;
+    -ms-transition: color .1s ease-in, background .1s ease-in;
+    -o-transition: color .1s ease-in, background .1s ease-in;
+    transition: color .1s ease-in, background .1s ease-in;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#hello {
+    /*background: url("home1.jpg");*/
+    background-attachment: relative;
+    background-position: center center;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+#hello h1 {
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #74cfae;
+    /*color: #607792;*/
+}
+
+#hello h2 {
+    /*color: #9DA4A9;*/
+    color: #A6A6A6;
+    font-weight: 700;
+}
+
+#hello img {
+    margin-top: 100px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#f {
+    padding-top: 20px;
+    background: #74cfae;
+    /*background: #607792;*/
+}
+
+#f a {
+    color: #f2f2f2;
+    font-weight: 800;
+}
+
+#f p {
+    color: #f2f2f2;
+    text-align: right;
+    font-weight: 400;
+}
+
+#topics {
+    background-color: #4e4e4e;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /*margin-top: 50px;*/
+}
+
+#topics h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #74cfae;
+    /*color: #f2f2f2;*/
+}
+
+#topics h3 {
+    color: #f2f2f2;
+}
+
+#topics p {
+    color: #f2f2f2;
+    font-weight: 400;
+}
+
+.sep {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+}
+.portfolio {
+    background-image: url(sep1.jpg);
+}
+
+#map-holder {
+    height:250px;
+}
