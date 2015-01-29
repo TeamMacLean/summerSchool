@@ -18,7 +18,7 @@ function initialize_map() {
     var marker = new google.maps.Marker({
         position: place,
         icon: {
-            url: "pin.png",
+            url: "img/pin.png",
             scaledSize: new google.maps.Size(52, 52)
         },
         map: map

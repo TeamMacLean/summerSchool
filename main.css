@@ -1,8 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 
 body {
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
+    background: #E8E8DF;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -82,22 +83,27 @@ hr {
     font-size: 60px;
     font-weight: 700;
     letter-spacing: 3px;
-    color: #74cfae;
+    /*color: #74cfae;*/
+    color:#B1C635;
     /*color: #607792;*/
 }
 
 #hello h2 {
     /*color: #9DA4A9;*/
-    color: #A6A6A6;
+    /*color: #A6A6A6;*/
+    color:#ADAD9D;
     font-weight: 700;
 }
 
 #hello img {
-    margin-top: 100px;
     width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#hello .tsl {
+    margin-top: 64px;
 }
 
 #topics {
@@ -110,7 +116,8 @@ hr {
 #topics h2 {
     text-transform: uppercase;
     font-weight: 700;
-    color: #74cfae;
+    /*color: #74cfae;*/
+    color:#B1C635;
     /*color: #f2f2f2;*/
 }
 
@@ -123,9 +130,36 @@ hr {
     font-weight: 400;
 }
 
+#pricing {
+    background-color: #302F2F;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*margin-top: 50px;*/
+}
+
+#pricing h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    /*color: #74cfae;*/
+    color:#B1C635;
+}
+
+#pricing h3 {
+    color: #f2f2f2;
+}
+
+#pricing .price {
+    /*font-weight: 700;*/
+    font-size:35px;
+}
+
+
+
+
 #f {
     padding-top: 20px;
-    background: #74cfae;
+    /*background: #74cfae;*/
+    background:#B1C635;;
     /*background: #607792;*/
 }
 
@@ -140,18 +174,6 @@ hr {
     font-weight: 400;
 }
 
-.sep {
-    background-attachment: fixed;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    height: 250px;
-    position: relative;
-}
-
-.portfolio {
-    background-image: url(sep1.jpg);
-}
-
 #map-holder {
-    height: 500px;
+    height: 400px;
 }
