@@ -1,7 +1,7 @@
 // Google Maps
 function initialize_map() {
 
-    var place = {lat:52.622463, lng: 1.222868};
+    var place = {lat: 52.622463, lng: 1.222868};
 
     var map = new google.maps.Map(document.getElementById("map-holder"), {
         center: place,
@@ -32,7 +32,15 @@ function initialize_map() {
 
 }
 
+function initialize_stellar() {
+    $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 40
+    });
+}
 
 $(window).load(function () {
     initialize_map();
+
+    initialize_stellar();
 });

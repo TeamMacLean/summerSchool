@@ -177,3 +177,23 @@ hr {
 #map-holder {
     height: 400px;
 }
+
+.sep {
+    background-color: black;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 300px;
+    width:100%;
+    position: relative;
+}
+
+.t-one {
+    background-image: url(img/T1.png);
+}
+.t-two {
+    background-image: url(img/T2.png);
+}
+.t-three {
+    background-image: url(img/T3.png);
+}
