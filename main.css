@@ -200,8 +200,10 @@ hr {
 
 
 .submission-form {
-    padding-top:200px;
     text-transform: uppercase;
+    padding:50px
+    /*padding-top:100px;*/
+    /*padding-bottom:100px;*/
 
 }
 .submission-form h2{
