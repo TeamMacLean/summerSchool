@@ -197,3 +197,18 @@ hr {
 .t-three {
     background-image: url(img/T3.png);
 }
+
+
+.submission-form {
+    padding-top:200px;
+    text-transform: uppercase;
+
+}
+.submission-form h2{
+    font-weight: 800;
+
+}
+
+.submission-form a {
+    text-decoration: underline;
+}
