@@ -17,27 +17,64 @@
 </head>
 <body>
 
+<nav class="navbar navbar-inverse navbar-fixed-top visible-xs mobile-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
 
 <div id="hello">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 centered hello-content">
+    <div class="red-glass">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 centered hello-content">
 
-                <div class="hero-small">
-                    <hr><span><span class="fa fa-calendar"></span>7 - 28 August 2015 <span class="sep"></span> <span class="fa fa-map-marker"></span>Norwich, UK</span> <hr>
+                    <hr>
+                <span><span class="fa fa-calendar"></span>7 - 28 August 2015 <span class="sep"></span> <span
+                        class="fa fa-map-marker"></span>Norwich, UK</span>
+                    <hr>
+
+
+                    <h1>Plant Microbe Interactions</h1>
+
+                    <h2>TSL SUMMER SCHOOL</h2>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-3"><a href="#" class="btn btn-lg btn-default">Submit
+                            abstract</a>
+                        </div>
+                    </div>
+                    <!--<a href="http://www.tsl.ac.uk" target="_blank"><img src="img/TSL_white.png" class="tsl"></a>-->
                 </div>
-
-
-                <h1>Plant Microbe Interactions</h1>
-
-                <h2>TSL SUMMER SCHOOL</h2>
-                <div class="row">
-                    <div class="col-lg-6 col-lg-offset-3"><a href="#" class="btn btn-lg btn-default">Submit abstract</a></div>
-                </div>
-                <!--<a href="http://www.tsl.ac.uk" target="_blank"><img src="img/TSL_white.png" class="tsl"></a>-->
             </div>
         </div>
     </div>
+</div>
+
+<div class="navbar navbar-inverse visible-sm visible-md visible-lg sticky-nav">
+    <ul class="nav navbar-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Speakers</a></li>
+        <li><a href="#">Tickers</a></li>
+        <li><a href="#">Sponsors</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
 </div>
 
 <!--<div class="sep t-one" data-stellar-background-ratio="0.5" style="background-position: 50% -200px;"></div>-->
@@ -46,6 +83,7 @@
     <div class="container">
         <div class="col-lg-12 centered">
             <i class="fa fa-3x fa-th-list"></i>
+
             <h2>Topics</h2>
 
             <h3>Putting Together Genomic Resources for New Model Organisms</h3>
@@ -78,8 +116,11 @@
                 <!--<img src="img/appointment.png">-->
                 <!--<i class="fa fa-2x fa-calendar"></i>-->
                 <i class="fa fa-3x fa-ticket"></i>
+
                 <h2>Booking</h2>
+
                 <h3 class="price">£720</h3>
+
                 <h3>Registration closes: May 5th 2015</h3>
             </div>
         </div>
@@ -89,13 +130,13 @@
 <!--<div class="sep t-three" data-stellar-background-ratio="0.5" style="background-position: 50% 300px;"></div>-->
 
 <!--<div class="submission-form">-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="col-lg-12 centered">-->
-                <!--<h2>Submit abstracts <a href="http://goo.gl/forms/bziJQjZ9tJ" target="_blank">here</a></h2>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-12 centered">-->
+<!--<h2>Submit abstracts <a href="http://goo.gl/forms/bziJQjZ9tJ" target="_blank">here</a></h2>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <!--</div>-->
 
 <div id="map-holder"></div>
@@ -113,6 +154,7 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaueqMTw-xcIyCjsvCRYyKOLTjFwtvaUw"></script>
 <script src="bower_components/stellar/jquery.stellar.js"></script>
+<script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="main.js"></script>
 
 </body>

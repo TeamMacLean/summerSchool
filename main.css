@@ -1,9 +1,5 @@
 /*
-*	Orange - #fe4918
-*	Blue - #2da9ff
-*	Green - #57c2be
-*	Pink - #fe4918
-*	Berry - #ff8208
+* red = #fe4918
 */
 @import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900);
 
@@ -23,13 +19,27 @@ img {
 }
 
 #hello {
-    background: #fe4918;
-    opacity: .95;
+
+    background: url('img/bg1.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    /*padding-top: 50px;*/
+    /*margin-bottom: 30px;*/
     color: white;
     min-height: 850px;
+}
+
+#hello .red-glass {
+    height: 100%;
+    width: 100%;
+    background: #fe4918;
+    opacity: .90;
 }
 
 #hello .tsl {
@@ -50,7 +60,7 @@ img {
 #hello .hello-content {
     position: absolute;
     top: 50%;
-    margin-top: -250px;
+    margin-top: -240px;
     left: 0;
     right: 0;
 }
@@ -62,7 +72,7 @@ img {
     border-radius: 0;
     background: none;
     border-color: white;
-    margin-top: 80px;
+    /*margin-top: 80px;*/
 }
 
 #hello .btn:hover {
@@ -77,13 +87,19 @@ img {
     display: inline-block;
 }
 
-#hello .hero-small span {
-    font-size: 18pt;
+#hello span {
+    font-size: 17pt;
     font-weight: 400;
     display: inline-block;
     margin: 0 20px 15px;
     position: relative;
     top: -12px;
+}
+
+#hello span .sep {
+    margin: 0;
+    padding: 0;
+    width: 0;
 }
 
 #hello small span {
@@ -95,15 +111,39 @@ img {
     top: -12px;
 }
 
-#hello .hero-small span.fa {
+#hello span.fa {
     margin: 0 10px 0 0;
-    font-size: 20pt;
+    font-size: 20px;
     top: -3px;
 }
 
-#hello .hero-small .sep {
-    width: 15px;
-    display: inline-block;
+.navbar-header, #navbar {
+    border:none;
+}
+
+.mobile-header {
+    background: rgba(37, 37, 37, .9);
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background: none;
+    color: #fe4918;
+}
+
+.sticky-nav {
+    border-radius: 0;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sticky-nav .navbar-nav > li > a {
+    font-weight: 400;
+    color: white;
+}
+
+.sticky-nav .navbar-nav > li > a:hover {
+    color: #fe4918;
 }
 
 #topics, #pricing {
@@ -154,4 +194,13 @@ img {
     #hello h1 {
         font-size: 3em;
     }
+
+    #hello span.fa {
+        margin-right: 2px !important;
+    }
+
+    #hello span {
+        font-size: 16px;
+    }
+
 }

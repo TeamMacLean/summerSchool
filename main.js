@@ -1,5 +1,5 @@
 // Google Maps
-function initialize_map() {
+function init_map() {
 
     var place = {lat: 52.622463, lng: 1.222868};
 
@@ -32,25 +32,35 @@ function initialize_map() {
 
 }
 
-function initialize_stellar() {
+function init_stellar() {
     $.stellar({
         horizontalScrolling: false,
         verticalOffset: 40
     });
 }
 
-function initialize_hello() {
+function init_hello() {
     var hero = $('#hello');
     var winHeight = $(window).height();
     hero.css({height: winHeight + "px"});
 }
 
+function init_sticky() {
+    var $nav = $('.sticky-nav');
+    $nav.waypoint({
+        handler: function(direction) {
+            $nav.toggleClass('navbar-fixed-top');
+        }
+    });
+}
+
 $(window).load(function () {
-    initialize_map();
-    initialize_stellar();
-    initialize_hello();
+    init_map();
+    init_stellar();
+    init_hello();
+    init_sticky();
 });
 
 $(window).on("resize", function () {
-    initialize_hello();
+    init_hello();
 });
