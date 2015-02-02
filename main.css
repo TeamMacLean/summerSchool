@@ -61,7 +61,11 @@ img {
     border-radius: 0;
     background: none;
     border-color: white;
-    margin-top: 40px;
+    margin-top: 80px;
+}
+#hello .btn:hover {
+    color: #fe4918;
+    background: white;
 }
 
 #hello hr {
