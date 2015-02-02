@@ -39,8 +39,18 @@ function initialize_stellar() {
     });
 }
 
+function initialize_hello() {
+    var hero = $('#hello');
+    var winHeight = $(window).height();
+    hero.css({height: winHeight + "px"});
+}
+
 $(window).load(function () {
     initialize_map();
-
     initialize_stellar();
+    initialize_hello();
+});
+
+$(window).on("resize", function () {
+    initialize_hello();
 });
