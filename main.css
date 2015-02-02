@@ -39,7 +39,7 @@ img {
 #hello h1 {
     text-align: center;
     font-weight: 700;
-    font-size: 7em;
+    font-size: 6em;
     text-transform: uppercase;
 }
 
@@ -49,7 +49,8 @@ img {
 
 #hello .hello-content {
     position: absolute;
-    top: 15%;
+    top: 50%;
+    margin-top: -250px;
     left: 0;
     right: 0;
 }
@@ -63,6 +64,7 @@ img {
     border-color: white;
     margin-top: 80px;
 }
+
 #hello .btn:hover {
     color: #fe4918;
     background: white;
@@ -136,4 +138,20 @@ img {
     color: white;
     text-align: right;
     font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    #hello h1 {
+        font-size: 3.8em;
+    }
+
+    #hello hr {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #hello h1 {
+        font-size: 3em;
+    }
 }
