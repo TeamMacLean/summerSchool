@@ -88,6 +88,12 @@ hr {
     /*color: #607792;*/
 }
 
+@media (max-width: 480px) {
+    #hello h1 {
+        font-size: 40px;
+    }
+}
+
 #hello h2 {
     /*color: #9DA4A9;*/
     /*color: #A6A6A6;*/
