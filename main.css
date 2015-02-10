@@ -39,7 +39,7 @@ img {
     height: 100%;
     width: 100%;
     background: #fe4918;
-    opacity: .90;
+    opacity: .95;
 }
 
 #hello .tsl {
@@ -118,7 +118,7 @@ img {
 }
 
 .navbar-header, #navbar {
-    border:none;
+    border: none;
 }
 
 .mobile-header {
@@ -133,8 +133,8 @@ img {
 .sticky-nav {
     border-radius: 0;
     border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .sticky-nav .navbar-nav > li > a {
@@ -146,22 +146,41 @@ img {
     color: #fe4918;
 }
 
-#topics, #pricing {
-    margin-top: 40px;
-    margin-bottom: 40px;
+#topics, #booking {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-#topics h2, #pricing h2 {
+#topics h2, #booking h2 {
+    font-size: 3.5em;
+    font-weight: 200;
+}
+
+#topics .fa, #booking .fa {
+    color: #fe4918;
+}
+
+#topics h3, #booking h3 {
+    font-size: 1.5em;
+}
+
+#topics h3 {
+    text-align: left;
+}
+
+#booking {
+    background: #3D3D3D;
+    color: white;
+}
+
+#booking .price {
+    color: #fe4918;
     font-size: 3em;
     font-weight: 200;
 }
 
-#topics .fa, #pricing .fa {
-    color: #fe4918;
-}
-
-#topics h3, #pricing h3 {
-    font-size: 1.5em;
+#map-holder {
+    height: 400px;
 }
 
 #f {
