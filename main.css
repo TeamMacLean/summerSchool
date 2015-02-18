@@ -1,10 +1,10 @@
 /*
 * red = #fe4918
 */
-@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
@@ -55,6 +55,8 @@ img {
 
 #hello h2 {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 #hello .hello-content {
@@ -88,7 +90,7 @@ img {
 }
 
 #hello span {
-    font-size: 17pt;
+    font-size: 2em;
     font-weight: 400;
     display: inline-block;
     margin: 0 20px 15px;
@@ -102,14 +104,14 @@ img {
     width: 0;
 }
 
-#hello small span {
-    font-size: 18pt;
-    font-weight: 300;
-    display: inline-block;
-    margin: 0 20px 15px;
-    position: relative;
-    top: -12px;
-}
+/*#hello small span {*/
+/*font-size: 18pt;*/
+/*font-weight: 300;*/
+/*display: inline-block;*/
+/*margin: 0 20px 15px;*/
+/*position: relative;*/
+/*top: -12px;*/
+/*}*/
 
 #hello span.fa {
     margin: 0 10px 0 0;
@@ -146,28 +148,89 @@ img {
     color: #fe4918;
 }
 
-#topics, #booking {
+#about, #topics, #booking, #schedule {
     padding-top: 80px;
     padding-bottom: 80px;
+    color: black;
+    border-bottom: 1px #ACACAC solid; /* TODO guide */
 }
 
-#topics h2, #booking h2 {
+#about {
+
+}
+
+#about p, #topics p, #topics li, #booking p, #schedule p {
+    font-size: 1em;
+    line-height: 1.6em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+#about h2, #topics h2, #booking h2, #schedule h2 {
     font-size: 3.5em;
-    font-weight: 200;
+    font-weight: 100;
+    margin-bottom: 80px;
 }
 
-#topics .fa, #booking .fa {
+#about .fa, #topics .fa, #booking .fa, #schedule .fa {
     color: #fe4918;
 }
 
-#topics h3, #booking h3 {
+#about h3, #topics h3, #booking h3, #schedule h3 {
     font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-#topics h3 {
+#about ul {
+
+    padding-left: 0;
+}
+
+#about ul li {
+    font-size: 1.2em;
+    /*font-weight: 200;*/
+    text-align: center;
+    list-style-type: none;
+}
+
+#about h3 {
+    margin-top: 10rem;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+#schedule .schedule-item {
     text-align: left;
+    margin-bottom: 80px;
 }
 
+#schedule .row {
+    margin-bottom: 20px;
+}
+
+#schedule .schedule-item .schedule-day {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#schedule .schedule-item-speaker img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 60px;*/
+    /*height: 60px;*/
+}
+
+#schedule .schedule-item-time {
+
+}
+#schedule .schedule-item-title {
+    color: #fe4918;
+    font-size: 1.4em;
+}
+#schedule .schedule-item-speaker-name {
+
+}
 #booking {
     background: #3D3D3D;
     color: white;
@@ -197,6 +260,23 @@ img {
     color: white;
     text-align: right;
     font-weight: 400;
+}
+
+.paralax {
+    background: url('./img/bg1.jpg') center bottom no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 128px;
+
+}
+
+.overlay {
+    background: #25201f;
+    opacity: .8;
+    height: 128px;
 }
 
 @media (max-width: 767px) {
