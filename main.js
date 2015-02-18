@@ -34,13 +34,6 @@ function init_map() {
 
 }
 
-function init_stellar() {
-    $.stellar({
-        horizontalScrolling: false,
-        verticalOffset: 40
-    });
-}
-
 function init_hello() {
     var hero = $('#hello');
     var winHeight = $(window).height();
@@ -48,13 +41,18 @@ function init_hello() {
 }
 
 function init_sticky() {
-    var $nav = $('.sticky-nav');
-    $nav.waypoint({
-        handler: function (direction) {
-            $nav.toggleClass('navbar-fixed-top');
+    var $nav = $('#sticky-nav');
+
+    $nav.affix({
+        offset: {
+            top: $('#hello').height()-$nav.height()
         }
     });
+    $('body').scrollspy({ target: '#sticky-nav' });
+
+
 }
+
 
 function init_animations() {
     $('.animated').appear(function () {
@@ -83,7 +81,7 @@ $(window).load(function () {
     init_hello();
 //    init_animations();
     init_sticky();
-    init_stellar();
+//    init_stellar();
     init_map();
 });
 

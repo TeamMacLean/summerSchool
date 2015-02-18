@@ -84,7 +84,7 @@ var days = [
             },
             {
                 time: 'AM',
-                title: 'Practical Session: Data',
+                title: 'Practical Session: Data'
             }
         ]
     },

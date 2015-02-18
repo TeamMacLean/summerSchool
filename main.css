@@ -132,31 +132,33 @@ img {
     color: #fe4918;
 }
 
-.sticky-nav {
-    border-radius: 0;
-    border: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
+#sticky-nav {
+    width:100%;
 }
 
-.sticky-nav .navbar-nav > li > a {
+#sticky-nav .navbar-inverse {
+    border-radius: 0;
+}
+
+#sticky-nav .navbar-nav > li > a {
     font-weight: 400;
     color: white;
 }
 
-.sticky-nav .navbar-nav > li > a:hover {
+#sticky-nav .navbar-nav > li > a:hover, #sticky-nav .navbar-nav > li.active > a {
     color: #fe4918;
+}
+
+#sticky-nav.affix {
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 #about, #topics, #booking, #schedule {
     padding-top: 80px;
     padding-bottom: 80px;
     color: black;
-    border-bottom: 1px #ACACAC solid; /* TODO guide */
-}
-
-#about {
-
 }
 
 #about p, #topics p, #topics li, #booking p, #schedule p {
@@ -199,38 +201,26 @@ img {
     font-weight: 100;
 }
 
+#schedule h3 {
+    font-weight: 100;
+}
+
 #schedule .schedule-item {
-    text-align: left;
+text-align: center;
     margin-bottom: 80px;
+    border: 1px #c2c2c2 solid;
+    padding: 20px 8px 40px;
 }
 
-#schedule .row {
-    margin-bottom: 20px;
-}
-
-#schedule .schedule-item .schedule-day {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-#schedule .schedule-item-speaker img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*width: 60px;*/
-    /*height: 60px;*/
-}
-
-#schedule .schedule-item-time {
-
-}
-#schedule .schedule-item-title {
+#schedule .title {
     color: #fe4918;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
-#schedule .schedule-item-speaker-name {
 
+#schedule .time:nth-of-type(n+2){
+    margin-top: 40px;
 }
+
 #booking {
     background: #3D3D3D;
     color: white;
@@ -269,14 +259,14 @@ img {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 128px;
+    height: 80px;
 
 }
 
 .overlay {
     background: #25201f;
-    opacity: .8;
-    height: 128px;
+    opacity: .5;
+    height: 80px;
 }
 
 @media (max-width: 767px) {
