@@ -18,6 +18,12 @@ img {
     display: block;
 }
 
+
+.hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 #hello {
 
     background: url('img/bg1.jpg') center center no-repeat;
@@ -217,10 +223,10 @@ img {
 
 #schedule .schedule-item {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     border: 1px #c2c2c2 solid;
-    padding: 20px 8px 40px;
-    height: 570px;
+    /*padding: 20px 8px 40px;*/
+    height: 380px;
 }
 
 #schedule .title {
@@ -229,7 +235,7 @@ img {
 }
 
 #schedule .time:nth-of-type(n+2) {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 #booking {
