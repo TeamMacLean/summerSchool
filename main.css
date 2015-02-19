@@ -138,7 +138,7 @@ img {
 }
 
 #sticky-nav {
-    width:100%;
+    width: 100%;
 }
 
 #sticky-nav .navbar-inverse {
@@ -190,7 +190,7 @@ img {
 }
 
 .no-margin {
-    margin:0;
+    margin: 0;
 }
 
 #about ul {
@@ -216,10 +216,11 @@ img {
 }
 
 #schedule .schedule-item {
-text-align: center;
+    text-align: center;
     margin-bottom: 80px;
     border: 1px #c2c2c2 solid;
     padding: 20px 8px 40px;
+    height: 570px;
 }
 
 #schedule .title {
@@ -227,7 +228,7 @@ text-align: center;
     font-size: 1.2em;
 }
 
-#schedule .time:nth-of-type(n+2){
+#schedule .time:nth-of-type(n+2) {
     margin-top: 40px;
 }
 
