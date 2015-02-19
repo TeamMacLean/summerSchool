@@ -58,7 +58,7 @@ img {
 #hello h2 {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
 }
 
 #hello .hello-content {
@@ -69,7 +69,7 @@ img {
     /*right: 0;*/
 }
 
-#hello .btn {
+.btn.submit {
     color: white;
     font-size: 2em;
     font-weight: 300;
@@ -79,7 +79,7 @@ img {
     /*margin-top: 80px;*/
 }
 
-#hello .btn:hover {
+.btn.submit:hover {
     color: #fe4918;
     background: white;
 }
