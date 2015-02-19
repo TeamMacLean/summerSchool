@@ -158,8 +158,8 @@ img {
 }
 
 #about, #topics, #booking, #schedule {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     color: black;
 }
 
@@ -173,7 +173,7 @@ img {
 #about h2, #topics h2, #booking h2, #schedule h2 {
     font-size: 3.5em;
     font-weight: 100;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 #about .fa, #topics .fa, #booking .fa, #schedule .fa {
