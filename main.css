@@ -183,6 +183,10 @@ img {
     margin-bottom: 20px;
 }
 
+.no-margin {
+    margin:0;
+}
+
 #about ul {
 
     padding-left: 0;
