@@ -38,8 +38,8 @@ img {
 #hello .red-glass {
     height: 100%;
     width: 100%;
-    background: #fe4918;
-    opacity: .95;
+    /*background: #fe4918;*/
+    /*opacity: .95;*/
     padding-top: 20px;
     padding-bottom: 20px;
 }
