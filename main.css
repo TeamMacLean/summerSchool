@@ -183,6 +183,7 @@ img {
 #about h3, #topics h3, #booking h3, #schedule h3 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .no-margin {
