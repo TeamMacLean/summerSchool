@@ -36,7 +36,7 @@ function init_map() {
 
 function init_hello() {
     var hero = $('#hello');
-    var winHeight = $(window).height();
+    var winHeight = $(window).height()/2;
     hero.css({height: winHeight + "px"});
 }
 
@@ -78,7 +78,7 @@ function init_animations() {
 }
 
 $(window).load(function () {
-    init_hello();
+    //init_hello();
 //    init_animations();
     init_sticky();
 //    init_stellar();
@@ -86,5 +86,5 @@ $(window).load(function () {
 });
 
 $(window).on("resize", function () {
-    init_hello();
+    //init_hello();
 });
