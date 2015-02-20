@@ -141,34 +141,15 @@ img {
 
 #sticky-nav {
     width: 100%;
-<<<<<<< HEAD
-=======
-    padding-top: 60px;
-    padding-bottom: 60px;
->>>>>>> master
 }
 
 #sticky-nav .navbar-inverse {
     border-radius: 0;
 }
 
-<<<<<<< HEAD
 #sticky-nav .navbar-nav > li > a {
     font-weight: 400;
     color: white;
-=======
-@media (max-width: 480px) {
-    #hello h1 {
-        font-size: 40px;
-    }
-}
-
-#hello h2 {
-    /*color: #9DA4A9;*/
-    /*color: #A6A6A6;*/
-    color: #838374;
-    font-weight: 700;
->>>>>>> master
 }
 
 #sticky-nav .navbar-nav > li > a:hover, #sticky-nav .navbar-nav > li.active > a {
@@ -325,12 +306,6 @@ img {
         display: none;
     }
 }
-<<<<<<< HEAD
-=======
-.submission-form h2{
-    color: #838374;
-    font-weight: 700;
->>>>>>> master
 
 @media (max-width: 480px) {
     #hello h1 {
