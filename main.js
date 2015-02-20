@@ -1,21 +1,23 @@
 // Google Maps
-function initialize_map() {
+function init_map() {
 
     var place = {lat: 52.622463, lng: 1.222868};
 
+
     var map = new google.maps.Map(document.getElementById("map-holder"), {
         center: place,
-        zoom: 16,
+        zoom: 14,
         scrollwheel: false,
-        draggable: true,
-        scaleControl: true,
-        navigationControl: false,
+        panControl: false,
         mapTypeControl: false,
         streetViewControl: false,
+        draggable: false,
+        scaleControl: false,
+        navigationControl: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
-    var marker = new google.maps.Marker({
+    new google.maps.Marker({
         position: place,
         icon: {
             url: "img/pin.png",
@@ -32,15 +34,57 @@ function initialize_map() {
 
 }
 
-function initialize_stellar() {
-    $.stellar({
-        horizontalScrolling: false,
-        verticalOffset: 40
+function init_hello() {
+    var hero = $('#hello');
+    var winHeight = $(window).height()/2;
+    hero.css({height: winHeight + "px"});
+}
+
+function init_sticky() {
+    var $nav = $('#sticky-nav');
+
+    $nav.affix({
+        offset: {
+            top: $('#hello').height()-$nav.height()
+        }
     });
+    $('body').scrollspy({ target: '#sticky-nav' });
+
+
+}
+
+
+function init_animations() {
+    $('.animated').appear(function () {
+        var element = $(this);
+        var animation = element.data('animation');
+        var animationDelay = element.data('delay');
+        if (animationDelay) {
+            setTimeout(function () {
+                element.addClass(animation + " visible");
+                element.removeClass('hiding');
+                if (element.hasClass('counter')) {
+                    element.find('.value').countTo();
+                }
+            }, animationDelay);
+        } else {
+            element.addClass(animation + " visible");
+            element.removeClass('hiding');
+            if (element.hasClass('counter')) {
+                element.find('.value').countTo();
+            }
+        }
+    }, {accY: -150});
 }
 
 $(window).load(function () {
-    initialize_map();
+    //init_hello();
+//    init_animations();
+    init_sticky();
+//    init_stellar();
+    init_map();
+});
 
-    initialize_stellar();
+$(window).on("resize", function () {
+    //init_hello();
 });

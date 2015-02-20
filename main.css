@@ -1,93 +1,162 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+/*
+* red = #fe4918
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 
 body {
-    /*background-color: #f2f2f2;*/
-    background: #E8E8DF;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #555;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    color: #333;
-}
-
-p {
-    line-height: 28px;
-    margin-bottom: 25px;
-}
-
-.centered {
     text-align: center;
 }
 
-a {
-    color: #34495E;
-    word-wrap: break-word;
-    -webkit-transition: color .1s ease-in, background .1s ease-in;
-    -moz-transition: color .1s ease-in, background .1s ease-in;
-    -ms-transition: color .1s ease-in, background .1s ease-in;
-    -o-transition: color .1s ease-in, background .1s ease-in;
-    transition: color .1s ease-in, background .1s ease-in;
-}
-
-a:focus, a:hover {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
-}
-
-a:after, a:before {
-    -webkit-transition: color .1s ease-in, background .1s ease-in;
-    -moz-transition: color .1s ease-in, background .1s ease-in;
-    -ms-transition: color .1s ease-in, background .1s ease-in;
-    -o-transition: color .1s ease-in, background .1s ease-in;
-    transition: color .1s ease-in, background .1s ease-in;
-}
-
-hr {
+img {
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
+
+
 
 #hello {
-    /*background: url("home1.jpg");*/
-    background: fixed center center;
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
+    background: url('img/bg1.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /*padding-top: 50px;*/
+    /*margin-bottom: 30px;*/
+    color: white;
+    /*min-height: 850px;*/
+}
 
+#hello .red-glass {
+    height: 100%;
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /*background: #fe4918;*/
+    /*opacity: .95;*/
+    background: rgba(40, 62, 87, 0.8);
+
+    /*opacity: .8;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#hello .tsl {
+    margin-top: 40px;
 }
 
 #hello h1 {
-    font-size: 60px;
+    text-align: center;
     font-weight: 700;
-    letter-spacing: 3px;
-    /*color: #74cfae;*/
-    color:#B1C635;
-    /*color: #607792;*/
+    font-size: 6em;
+    text-transform: uppercase;
 }
 
+#hello h2 {
+    text-align: center;
+    margin-top: 0;
+    /*margin-bottom: 40px;*/
+}
+
+#hello .hello-content {
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*margin-top: -240px;*/
+    /*left: 0;*/
+    /*right: 0;*/
+}
+
+.btn.submit {
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+    border-radius: 0;
+    background: none;
+    border-color: white;
+    /*margin-top: 80px;*/
+}
+
+.btn.submit:hover {
+    color: #fe4918;
+    background: white;
+}
+
+#hello hr {
+    width: 10%;
+    border: 0;
+    border-top: 1px solid white;
+    display: inline-block;
+}
+
+#hello span {
+    font-size: 2em;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 20px 15px;
+    position: relative;
+    top: -12px;
+}
+
+#hello span .sep {
+    margin: 0;
+    padding: 0;
+    width: 0;
+}
+
+/*#hello small span {*/
+/*font-size: 18pt;*/
+/*font-weight: 300;*/
+/*display: inline-block;*/
+/*margin: 0 20px 15px;*/
+/*position: relative;*/
+/*top: -12px;*/
+/*}*/
+
+#hello span.fa {
+    margin: 0 10px 0 0;
+    font-size: 20px;
+    top: -3px;
+}
+
+.navbar-header, #navbar {
+    border: none;
+}
+
+.mobile-header {
+    background: rgba(37, 37, 37, .9);
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background: none;
+    color: #fe4918;
+}
+
+#sticky-nav {
+    width: 100%;
+<<<<<<< HEAD
+=======
+    padding-top: 60px;
+    padding-bottom: 60px;
+>>>>>>> master
+}
+
+#sticky-nav .navbar-inverse {
+    border-radius: 0;
+}
+
+<<<<<<< HEAD
+#sticky-nav .navbar-nav > li > a {
+    font-weight: 400;
+    color: white;
+=======
 @media (max-width: 480px) {
     #hello h1 {
         font-size: 40px;
@@ -99,125 +168,181 @@ hr {
     /*color: #A6A6A6;*/
     color: #838374;
     font-weight: 700;
+>>>>>>> master
 }
 
-#hello img {
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#sticky-nav .navbar-nav > li > a:hover, #sticky-nav .navbar-nav > li.active > a {
+    color: #fe4918;
 }
 
-#hello .tsl {
-    margin-top: 64px;
+#sticky-nav.affix {
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
-#topics {
-    background-color: #4e4e4e;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    /*margin-top: 50px;*/
+#about, #topics, #booking, #schedule, #instructors {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: black;
 }
 
-#topics h2 {
-    text-transform: uppercase;
-    font-weight: 700;
-    /*color: #74cfae;*/
-    color:#B1C635;
-    /*color: #f2f2f2;*/
+#about p, #topics p, #topics li, #booking p, #schedule p, #instructors p{
+    font-size: 1em;
+    line-height: 1.6em;
+    font-weight: 300;
+    text-align: justify;
 }
 
-#topics h3 {
-    color: #f2f2f2;
+#about h2, #topics h2, #booking h2, #schedule h2, #instructors h2 {
+    font-size: 3.5em;
+    font-weight: 100;
+    margin-bottom: 40px;
 }
 
-#topics p {
-    color: #f2f2f2;
-    font-weight: 400;
+#about .fa, #topics .fa, #booking .fa, #schedule .fa, #instructors .fa {
+    color: #fe4918;
 }
 
-#pricing {
-    background-color: #302F2F;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    /*margin-top: 50px;*/
-}
-
-#pricing h2 {
-    text-transform: uppercase;
-    font-weight: 700;
-    /*color: #74cfae;*/
-    color:#B1C635;
-}
-
-#pricing h3 {
-    color: #f2f2f2;
-}
-
-#pricing .price {
-    /*font-weight: 700;*/
-    font-size:35px;
+#about h3, #topics h3, #booking h3, #schedule h3, #instructors h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 300;
 }
 
 
-
-
-#f {
-    padding-top: 20px;
-    /*background: #74cfae;*/
-    background:#B1C635;;
-    /*background: #607792;*/
+.no-margin {
+    margin: 0;
 }
 
-#f a {
-    color: #f2f2f2;
-    font-weight: 800;
+#about ul {
+
+    padding-left: 0;
 }
 
-#f p {
-    color: #f2f2f2;
-    text-align: right;
-    font-weight: 400;
+#about ul li {
+    font-size: 1.2em;
+    /*font-weight: 200;*/
+    text-align: center;
+    list-style-type: none;
+}
+
+#about h3 {
+    margin-top: 10rem;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+#schedule h3 {
+    font-weight: 100;
+}
+
+#schedule .schedule-item {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px #c2c2c2 solid;
+    /*padding: 20px 8px 40px;*/
+    min-height: 380px;
+}
+
+#schedule .schedule-item h3{
+    margin:0;
+    padding:0;
+}
+
+#schedule .title {
+    color: #fe4918;
+    font-size: 1.2em;
+}
+
+#schedule .time:nth-of-type(n+2) {
+    margin-top: 10px;
+}
+
+#instructors h3 {
+    margin-top: 4px;
+}
+
+#instructors a {
+    text-decoration: none;
+
+}
+
+#booking {
+    background: #3D3D3D;
+    color: white;
+}
+
+#booking .price {
+    color: #fe4918;
+    font-size: 3em;
+    font-weight: 200;
 }
 
 #map-holder {
     height: 400px;
 }
 
-.sep {
-    background-color: black;
+#f {
+    padding-top: 20px;
+    background: #fe4918;;
+}
+
+#f a {
+    color: white;
+    font-weight: 800;
+}
+
+#f p {
+    color: white;
+    text-align: right;
+    font-weight: 400;
+}
+
+.paralax {
+    background: url('./img/bg1.jpg') center bottom no-repeat;
     background-attachment: fixed;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    height: 300px;
-    width:100%;
-    position: relative;
-}
-
-.t-one {
-    background-image: url(img/T1.png);
-}
-.t-two {
-    background-image: url(img/T2.png);
-}
-.t-three {
-    background-image: url(img/T3.png);
-}
-
-
-.submission-form {
-    text-transform: uppercase;
-    padding:50px
-    /*padding-top:100px;*/
-    /*padding-bottom:100px;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 80px;
 
 }
+
+.overlay {
+    background: #25201f;
+    opacity: .5;
+    height: 80px;
+}
+
+@media (max-width: 767px) {
+    #hello h1 {
+        font-size: 3.8em;
+    }
+
+    #hello hr {
+        display: none;
+    }
+}
+<<<<<<< HEAD
+=======
 .submission-form h2{
     color: #838374;
     font-weight: 700;
+>>>>>>> master
 
-}
+@media (max-width: 480px) {
+    #hello h1 {
+        font-size: 3em;
+    }
 
-.submission-form a {
-    text-decoration: underline;
+    #hello span.fa {
+        margin-right: 2px !important;
+    }
+
+    #hello span {
+        font-size: 16px;
+    }
+
 }

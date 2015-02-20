@@ -1,0 +1,216 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+body {
+    /*background-color: #f2f2f2;*/
+    background: #E8E8DF;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+a {
+    color: #34495E;
+    word-wrap: break-word;
+    -webkit-transition: color .1s ease-in, background .1s ease-in;
+    -moz-transition: color .1s ease-in, background .1s ease-in;
+    -ms-transition: color .1s ease-in, background .1s ease-in;
+    -o-transition: color .1s ease-in, background .1s ease-in;
+    transition: color .1s ease-in, background .1s ease-in;
+}
+
+a:focus, a:hover {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:after, a:before {
+    -webkit-transition: color .1s ease-in, background .1s ease-in;
+    -moz-transition: color .1s ease-in, background .1s ease-in;
+    -ms-transition: color .1s ease-in, background .1s ease-in;
+    -o-transition: color .1s ease-in, background .1s ease-in;
+    transition: color .1s ease-in, background .1s ease-in;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#hello {
+    /*background: url("home1.jpg");*/
+    background: fixed center center;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#hello h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    /*color: #74cfae;*/
+    color:#B1C635;
+    /*color: #607792;*/
+}
+
+#hello h2 {
+    /*color: #9DA4A9;*/
+    /*color: #A6A6A6;*/
+    color:#ADAD9D;
+    font-weight: 700;
+}
+
+#hello img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hello .tsl {
+    margin-top: 64px;
+}
+
+#topics {
+    background-color: #4e4e4e;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*margin-top: 50px;*/
+}
+
+#topics h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    /*color: #74cfae;*/
+    color:#B1C635;
+    /*color: #f2f2f2;*/
+}
+
+#topics h3 {
+    color: #f2f2f2;
+}
+
+#topics p {
+    color: #f2f2f2;
+    font-weight: 400;
+}
+
+#pricing {
+    background-color: #302F2F;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*margin-top: 50px;*/
+}
+
+#pricing h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    /*color: #74cfae;*/
+    color:#B1C635;
+}
+
+#pricing h3 {
+    color: #f2f2f2;
+}
+
+#pricing .price {
+    /*font-weight: 700;*/
+    font-size:35px;
+}
+
+
+
+
+#f {
+    padding-top: 20px;
+    /*background: #74cfae;*/
+    background:#B1C635;;
+    /*background: #607792;*/
+}
+
+#f a {
+    color: #f2f2f2;
+    font-weight: 800;
+}
+
+#f p {
+    color: #f2f2f2;
+    text-align: right;
+    font-weight: 400;
+}
+
+#map-holder {
+    height: 400px;
+}
+
+.sep {
+    background-color: black;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 300px;
+    width:100%;
+    position: relative;
+}
+
+.t-one {
+    background-image: url(img/T1.png);
+}
+.t-two {
+    background-image: url(img/T2.png);
+}
+.t-three {
+    background-image: url(img/T3.png);
+}
+
+
+.submission-form {
+    text-transform: uppercase;
+    padding:50px
+    /*padding-top:100px;*/
+    /*padding-bottom:100px;*/
+
+}
+.submission-form h2{
+    font-weight: 800;
+
+}
+
+.submission-form a {
+    text-decoration: underline;
+}
