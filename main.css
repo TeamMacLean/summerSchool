@@ -300,15 +300,20 @@ img {
 
 @media (max-width: 767px) {
     #hello h1 {
-        font-size: 3.8em;
+      font-size: 3.8em;
     }
 
     #hello hr {
-        display: none;
+      display: none;
+    }
+
+    #hello .hello-content {
+      margin-top: 60px;
     }
 }
 
 @media (max-width: 480px) {
+
     #hello h1 {
         font-size: 3em;
     }
@@ -319,6 +324,10 @@ img {
 
     #hello span {
         font-size: 16px;
+    }
+
+    #hello .hello-content {
+      margin-top: 100px;
     }
 
 }
