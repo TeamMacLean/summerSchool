@@ -132,7 +132,7 @@ img {
 }
 
 .mobile-header {
-    background: rgba(37, 37, 37, .9);
+    background: rgba(37, 37, 37, 1);
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
