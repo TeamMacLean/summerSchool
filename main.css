@@ -18,18 +18,22 @@ img {
     display: block;
 }
 
-ul
-{
+ul {
     list-style-type: none;
+}
+
+#topics ul {
+    list-style: circle;
 }
 
 .left {
     float: left;
 }
 
-.left-align{
+.left-align {
     text-align: left !important;
 }
+
 #hello {
 
     background: url('img/bg1.jpg') center center no-repeat;
@@ -82,7 +86,7 @@ ul
     /*margin-top: -240px;*/
     /*left: 0;*/
     /*right: 0;*/
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .btn.submit {
@@ -179,7 +183,7 @@ ul
     color: black;
 }
 
-#about p, #topics p, #topics li, #booking p, #schedule p, #instructors p, #transportation p{
+#about p, #topics p, #topics li, #booking p, #schedule p, #instructors p, #transportation p {
     font-size: 1em;
     line-height: 1.6em;
     font-weight: 300;
@@ -201,7 +205,8 @@ ul
     margin-bottom: 20px;
     font-weight: 300;
 }
-#transportation img{
+
+#transportation img {
     padding: 12px;
 }
 
@@ -235,9 +240,9 @@ ul
     text-align: center;
 }
 
-#schedule .schedule-item h3{
-    margin:0;
-    padding:0;
+#schedule .schedule-item h3 {
+    margin: 0;
+    padding: 0;
 }
 
 #schedule .title {
@@ -310,25 +315,25 @@ ul
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display:         flex;
+    display: flex;
 }
 
-.row-eq-height [class*="col-"]{
+.row-eq-height [class*="col-"] {
     margin-bottom: 20px;
     /*border: 1px #c2c2c2 solid;*/
 }
 
 @media (max-width: 767px) {
     #hello h1 {
-      font-size: 3.8em;
+        font-size: 3.8em;
     }
 
     #hello hr {
-      display: none;
+        display: none;
     }
 
     #hello .hello-content {
-      margin-top: 60px;
+        margin-top: 60px;
     }
 }
 
