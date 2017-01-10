@@ -18,9 +18,9 @@ img {
     display: block;
 }
 
-ul {
-    list-style-type: none;
-}
+/*ul {*/
+    /*list-style-type: none;*/
+/*}*/
 
 #topics ul {
     list-style: circle;
@@ -182,6 +182,10 @@ ul {
     padding-bottom: 40px;
     color: black;
 }
+
+/*#about ul, #topicsu;, #booking, #schedule, #instructors, #transportation {*/
+    /**/
+/*}*/
 
 #about p, #topics p, #topics li, #booking p, #schedule p, #instructors p, #transportation p {
     font-size: 1em;
