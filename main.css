@@ -9,6 +9,10 @@ body {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
+    /*text-align: center;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
@@ -19,11 +23,20 @@ img {
 }
 
 /*ul {*/
-    /*list-style-type: none;*/
+/*list-style-type: none;*/
 /*}*/
 
-#topics ul {
+ul {
     list-style: circle;
+}
+
+#topics > ul, #topics li {
+    /*width: 200px;*/
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+    /*list-style: none;*/
+    list-style-position: inside;
+    font-size: 1.2em;
 }
 
 .left {
@@ -56,8 +69,7 @@ img {
     width: 100%;
     /*background: #fe4918;*/
     /*opacity: .95;*/
-    background: rgba(40, 62, 87, 0.8);
-
+    background: rgba(48, 87, 40, 0.8);
     /*opacity: .8;*/
     padding-top: 20px;
     padding-bottom: 20px;
@@ -104,12 +116,12 @@ img {
     background: white;
 }
 
-#hello hr {
-    width: 10%;
-    border: 0;
-    border-top: 1px solid white;
-    display: inline-block;
-}
+/*#hello hr {*/
+/*width: 1%;*/
+/*border: 0;*/
+/*border-top: 1px solid white;*/
+/*display: inline-block;*/
+/*}*/
 
 #hello span {
     font-size: 2em;
@@ -137,7 +149,7 @@ img {
 
 #hello span.fa {
     margin: 0 10px 0 0;
-    font-size: 20px;
+    font-size: 28px;
     top: -3px;
 }
 
@@ -184,10 +196,10 @@ img {
 }
 
 /*#about ul, #topicsu;, #booking, #schedule, #instructors, #transportation {*/
-    /**/
+/**/
 /*}*/
 
-#about p, #topics p, #topics li, #booking p, #schedule p, #instructors p, #transportation p {
+#about p, #topics p, #booking p, #schedule p, #instructors p, #transportation p {
     font-size: 1em;
     line-height: 1.6em;
     font-weight: 300;
@@ -219,17 +231,16 @@ img {
     margin: 0;
 }
 
-#about ul {
+/*#about ul {*/
+/*padding-left: 0;*/
+/*}*/
 
-    padding-left: 0;
-}
-
-#about ul li {
-    font-size: 1.2em;
-    /*font-weight: 200;*/
-    text-align: center;
-    list-style-type: none;
-}
+/*#about ul li {*/
+/*font-size: 1.2em;*/
+/*font-weight: 200;*/
+/*text-align: center;*/
+/*list-style-type: none;*/
+/*}*/
 
 #about h3 {
     margin-top: 10rem;
@@ -306,14 +317,15 @@ img {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 80px;
+    height: 32px;
 
 }
 
 .overlay {
-    background: #25201f;
-    opacity: .5;
-    height: 80px;
+    /*background: #25201f;*/
+    /*opacity: .5;*/
+    background: rgba(48, 87, 40, 0.8);
+    height: 32px;
 }
 
 .row-eq-height {
