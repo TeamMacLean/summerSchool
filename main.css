@@ -187,7 +187,7 @@ ul {
     font-size: 1em;
     line-height: 1.6em;
     font-weight: 300;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 #about h2, #topics h2, #booking h2, #schedule h2, #instructors h2, #transportation h2 {
