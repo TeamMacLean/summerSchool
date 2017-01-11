@@ -39,8 +39,16 @@ function compileLESS() {
 
 var server = http.createServer(function (req, res) {
     var done = finalhandler(req, res);
-    compileLESS();
+
+    try {
+        compileLESS();
+    } catch (e) {
+        console.error('could not compile the less');
+    }
+
+
     serve(req, res, done)
 });
 
 server.listen(process.env.PORT || 3000);
+console.log('server started');
