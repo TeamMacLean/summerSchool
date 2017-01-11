@@ -19,11 +19,13 @@ h6 {
   text-align: center;
 }
 a {
-  font-weight: 500;
   color: #74a850;
 }
 a:hover {
   color: #74a850;
+}
+p a {
+  font-weight: 500;
 }
 img {
   margin-left: auto;
