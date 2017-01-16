@@ -29,7 +29,7 @@ a:hover {
     color: #74a850;
 }
 
-p a, li a, section a {
+p a, li > a {
     font-weight: 500;
 }
 
