@@ -33,12 +33,6 @@ function init_map() {
 
 }
 
-function init_hello() {
-    var hero = $('#hello');
-    var winHeight = $(window).height() / 2;
-    hero.css({height: winHeight + "px"});
-}
-
 function init_sticky() {
     var $nav = $('#sticky-nav');
 
@@ -77,10 +71,7 @@ function init_animations() {
 }
 
 $(document).ready(function () {
-    //init_hello();
-//    init_animations();
     init_sticky();
-//    init_stellar();
     init_map();
 });
 
